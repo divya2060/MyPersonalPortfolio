@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+                margin:0px;
+                padding:0px;
+                
+            }
+          .sidebar{
+            background-color: gray;  
+            font-family: sans-serif;
+            height:100vh;
+            transition:transform 0.3s ease-in;
+            position:absolute;
+          }
+          .sidebar nav{
+            padding: 45px;
+          }
+          .sidebar nav li{
+            list-style:none;
+            font-size:large;
+            padding:33px 0;
+          }
+          .sidebar nav li a{
+            color:black;
+            text-decoration: none;
+          }
+
+        .container{
+            display:flex;
+          }
+          .h1{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin:25px;
+          }
+          p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+          .intro h2{
+            font-family: 'fira sans', sans-serif;
+            margin: 12px;
+            margin-top:50px;
+          }
+          .intro p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin:12px;
+          }
+          .skill{
+            background-color: red;
+             height:6px;
+             width:200px;
+             border:2px solid black;
+             border-radius: 50px;
+             margin:10px 0;
+          }
+          .skillitem{
+            display: flex;
+            align-items: center;
+            font-weight:900;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+          .hundred{
+           width:265px;
+           background-color:dodgerblue;
+
+          }
+          .fifty{
+            width:125px;
+            background-color: yellow;
+          }
+          
+          .t5{
+             width:75px;
+             background-color:red;
+          }
+          .hamburger{
+            position: absolute;
+            cursor: pointer;
+            top:10px;
+            left:10px;
+          }
+          .ham{
+            margin-top: 10px;
+            margin-left: 10px;
+          }
+          .cross{
+            margin-left:120px;
+            margin-top:10px;
+          }
+          .sidebarGo{
+            transform:translate(-443px,0px);
+              position:absolute;
+          }
+
+          @media(max-width:985px) {
+          
+           /* .sidebar{
+              transform:translate(-443px,0px);
+              position:absolute;
+            } */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+            <ul>
+                <li><a href="personal portfolio.html">HOME</a></li>
+                <li><a href="/services.html">Projects </a></li>
+                <li><a href="">CV</a></li>
+                <li><a href="/CONTACT.html">Contact me</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="main">
+          <div class="hamburger">
+            <img class="ham" src="images/ham.png" alt="" width="25px">
+            <img class="cross"    src="images/cross.png" alt="" width="25px">
+          </div>
+            <div class="intro">
+                <h2>About Me</h2>
+                <p>My name is Divya Prakash Singh i from Bhilai,Chhatisgarh.  I come from a city which is known for Bhilai Steel Plant and it is known as the 
+                    industrial and steel producing hub of Central India.I grew up  in a Cosmopolitan environment as it is known as melting pot of all cultures you can find communities from every part of India.I am myself a 3rd Generation from Bihar itself.
+                 As for my education qualifications, I studied in DPS Risali  from Nursery to class 10th and class 11th to class 12th in KPS and currently 
+                I am pursuing my Btech from Vellore Institute Of Technolgy,Vellore.
+            As for my hobbies are Fitness,reading books and coding</p>
+            <h2>My Skills</h2>
+
+            <div class="skillcontainer">
+          <div class="skillitem"> HTML:<div class="skill hundred"></div>90%</div>
+          <div class="skillitem">CSS:<div class="skill hundred"></div>85%</div>
+          <div class="skillitem">JavaScript:<div class="skill fifty"></div>56%</div>
+          <div class="skillitem">php:<div class="skill t5"></div>25%</div>
+          <div class="skillitem">GIT AND GITHUB:<div class="skill fifty"></div>50%</div>
+                   
+           
+
+             </div>
+            </div>
+        </div>    
+        </div>
+        <script src="script.js"></script>
+    
+</body>
+</html>

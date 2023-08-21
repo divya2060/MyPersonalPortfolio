@@ -1,0 +1,243 @@
+<html>
+<head>
+<title>MY comeback </title>
+<style>
+    h1{
+        color:blue;
+        font-weight:bolder ;
+    }
+    .one{
+        font-weight: bolder;
+    }
+    h3.one{
+       color:orange;
+    }
+    li.one{
+        color:black;
+    }
+    p b{
+        color:brown;
+    }
+    p small{
+        font-weight: 500;
+        color:chocolate;
+    }
+    h1+p{
+        font-size: large;
+        color:blue;
+    }
+body{
+    background-color:red;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+li[class]{
+    font-weight: 800;
+    color:darkmagenta;
+}
+body {
+  margin: 20px;
+  font-family:Arial,sans-serif;
+  font-style:italic;
+  font-size:20px;
+}
+.container{
+  margin:10px;
+ display:flex;
+ flex-wrap:wrap;
+ flex-direction: row;
+ align-content:stretch;
+}
+.items{
+ background-color:pink;
+ color:white;
+ border:2px solid crimson;
+ border-radius:4px;
+ padding:10px;
+  width:75px;
+}
+#item3{
+  flex-basis:200px;
+  align-self:start;
+}
+#item6{
+ flex-basis:20px; 
+}
+.gola{
+background-color:chartreuse;
+width:100px;
+height:100px;
+transition: width 2s,height 3s;
+border:2px solid blue;
+border-radius:4px;
+}
+.gola:hover{
+width:200px;
+height:200px;
+background-color:aqua;
+border:2px solid yellow;
+border-radius:100px;
+}
+@keyframes eg{
+ 0%{
+   background-color:blue;
+   left:0px;
+  }
+  25%{
+   background-color:green;
+    left:10px;
+  }
+  50%{
+  background-color:red;
+    left:15px;
+  }
+  100%{
+   background-color:black;
+    left:20px;
+  }
+  
+}
+.gola1{
+ background-color:pink;
+ color:white;
+ border:2px solid crimson;
+ border-radius:4px;
+ padding:10px;
+  width:75px;
+  text-align:center;
+  position:relative;
+  animation-name:eg;
+  animation-duration:10s;
+  animation-iteration-count:2;
+  animation-timing-function:linear;
+}          
+</style>
+</head>
+<body>
+  <script type="text/javascript">
+    var fname=prompt("enter your first name");
+    var lname=prompt("enter your last name");
+    var age=prompt("enter yor age");
+    document.write("your  name is " + fname +" "+ lname + " your age is "+ "<br>" + age);
+    document.wite("<br>");
+    document.write(Date());
+    var d=new Date();
+    var dy=d.getDate();
+    var mn=d.getMonth();
+    var yr=d.getFullYear();
+    document.getElementById("txt").innerHTML=dy+"/"+mn+"/"+yr;
+   </script>
+<h1>welcome to my world</h1>
+<p >this is the new era</p>
+<br>
+<p><b>this the new ear</b> <small>you</small> of y new life</p>
+<hr>
+<h2>shopping list</h2>
+<ol>
+<li class="one"> maggie 10 rs</li>
+<li>salt</li>
+<li>garam masala</li>
+<li >paneer</li>
+</ol>
+<hr>
+<h3 class="one">shopping list</h3>
+<ol type="a">
+<li class="a "> maggie 10 rs</li>
+<li class="a b">salt</li>
+<li class="ab">garam masala</li>
+<li>paneer</li>
+</ol>
+<hr>
+<a href="https://www.google.com" target="_blank">google </a>
+<br>
+<a href="page2.html" target="_blank">FRAME</a>
+<br>
+<a href="Csspage.html" target="_blank">CSS PROPERTIES</a>
+<br>
+<a href="ADDMISSION VIT/payment receipt.pdf" target="_blank">PAYMENT RECEIPT</a>
+<br>
+<a href="forms.html" target="_blank">WAY to payment form</a>
+<br>
+<a href="project.html" target="_blank">MY website mega project</a>
+<br>
+<img src="images/dodge.jpg" alt="sorry we couldnt load the image" width="300px">
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+<video src="videos/Storm.mp4" controls="">TOOFAN XD</video>
+<br>
+<hr>
+<table class="r2">
+    <thead>
+    <tr>
+    <th>SUBJECT</th>
+    <th>THEORY</th>
+    <th>PRACTICAL</th>
+    <th>TOTAL marks</th>
+    <th>Grades</th>
+     </tr>
+     </thead>
+<tbody>
+    <tr>
+        <td>physics</td>
+        <td>78</td>
+        <td>89</td>
+        <td>85</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>78</td>
+        <td>-</td>
+        <td>85</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>java</td>
+        <td>-</td>
+        <td>91</td>
+        <td>85</td>
+        <td>S</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <th colspan="5">RESULT : PASS </th>
+        <th rowspan="2">SAHI H BHAI</th>
+    </tr>
+</tfoot>
+</table>
+
+
+<div class="container">
+    <div class="items" id="item1">
+       1
+    </div>
+    <div class="items" id="item2">
+       2
+    </div>
+    <div class="items" id="item3">
+       3
+    </div>
+      <div class="items" id="item4">
+       5
+    </div>
+    <div class="items" id="item5">
+       6
+    </div>
+    <div class="items" id="item6">
+       7
+    </div>
+  </div>
+  <div class="gola">
+  yes
+  </div>
+  <div class="gola1" id="item1">
+    1
+  </div>
+  <p id="txt"> </p>
+
+</body>
+</html>

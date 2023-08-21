@@ -1,0 +1,122 @@
+<html>
+    <head>payment
+        <style>
+            @media screen and (max-width:1000px),screen and (orientation:landscape) {
+                
+            
+         *{
+            box-sizing:content-box;
+         }
+         body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             margin:20px 40px;
+             font-size:20px;
+             padding: 20px;
+        }
+        #one{
+            text-decoration: underline;
+            color: darkblue;
+            text-align: center;
+        }
+        .container{
+            background-color: lightgray;
+            padding: 20px;
+            border: 2px solid blue;
+            border-radius: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+              width:200px;
+              padding:12px;
+              border: 1px;   
+              margin: 10px;
+        }
+        fieldset{
+            background-color: white;
+            border: 1px solid #cccc;
+        }
+        input[type="submit"]{
+            background-color: darkgreen;
+            color:aliceblue;
+            border: none;
+            padding:12px 20px;
+            cursor: pointer;
+
+        }
+        input[type="reset"]{
+            background-color: red;
+            color:aliceblue;
+            border: none;
+            padding:12px 20px;
+            cursor: pointer;
+        }
+       input[type="submit"]:hover{
+        background-color: blue;
+       }
+       input[type="reset"]:hover{
+        background-color:blue;
+       }
+    }
+           
+        </style>
+    </head>
+    <title>PAYMENT FORM</title>
+    <body>
+        <div class="container">
+<form>
+        <h1 id="one">PAYMENT FORM IS BELOW</h1>
+        <p><b>REQUIRED PLACES ARE MARKED AS */<b></p>
+        <h2>Contact information</h2>
+        <hr>
+        <p>
+        First name<input type="text" name="fname" id="fname" required>
+         <br>
+        Last name<input type="text" name="lname" id="lname">
+        </p>
+
+            <legend>GENDER</legend>
+            <fieldset>
+                <p>
+            Male<input type="radio" name="gender" id="male">
+            Female<input type="radio" name="gender" id="female">
+           </p> 
+        </fieldset>
+        <p>
+            Address<textarea name="address" cols="56" rows="6" placeholder="enter your address"></textarea>
+        </p>
+        <p>
+            Email<input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            Pincode<input type="number" name="pincode" id="pincode">
+        </p>
+        <h3><b>PAYMENT INFORMATION</b></h3>
+        <hr>
+        <p>
+        <select name="card_type" id="card_type">
+            <option value="">--select a card type--</option>
+            <option value="mastercard">mastercard</option>
+            <option value="rupay">Rupay</option>
+            <option value="visa">Visa</option>
+        </select>
+        </p>
+        Card Number * <input type="number" type="Card_no" id="card_no" required>
+        <p>
+            <p>
+                Expiration Date :<input type="Date" name="exp_date" id="exp_date">
+            </p>
+            CVV *<input type="password" name="CVV" id="CVV" required>
+        </p>
+        <p>
+        <input type="submit" name="pay now" id="pay now">
+        <input type="reset" name="reset" id="reset">
+        </p>
+    </form>
+    </div>
+    </body>
+</html>
